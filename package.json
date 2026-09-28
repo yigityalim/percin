@@ -20,10 +20,10 @@
     "check:actions": "node scripts/check-actions.mjs"
   },
   "devDependencies": {
-    "@biomejs/biome": "2.5.12",
+    "@biomejs/biome": "2.5.14",
     "@changesets/cli": "3.0.3",
     "knip": "6.38.0",
-    "turbo": "2.10.12",
+    "turbo": "2.11.4",
     "@yigityalim/percin": "workspace:*"
   },
   "license": "MIT",
