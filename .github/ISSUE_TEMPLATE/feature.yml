@@ -1,0 +1,34 @@
+name: Feature request
+description: Propose a focused API or capability change
+title: "feat: "
+labels:
+  - enhancement
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: What concrete CLI authoring or runtime problem should Percin solve?
+    validations:
+      required: true
+  - type: textarea
+    id: api
+    attributes:
+      label: Proposed API
+      description: Show the consumer-facing TypeScript API when possible.
+      render: typescript
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+    validations:
+      required: false
+  - type: textarea
+    id: compatibility
+    attributes:
+      label: Compatibility impact
+      description: Note runtime, type inference, package size, or breaking-change implications.
+    validations:
+      required: true

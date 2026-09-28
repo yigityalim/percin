@@ -1,0 +1,62 @@
+{
+  "name": "percin",
+  "version": "0.1.0",
+  "description": "A fluent, type-safe TypeScript framework for building command-line applications.",
+  "type": "module",
+  "license": "MIT",
+  "sideEffects": false,
+  "engines": {
+    "node": ">=22"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yigityalim/percin.git",
+    "directory": "packages/percin"
+  },
+  "homepage": "https://github.com/yigityalim/percin#readme",
+  "bugs": {
+    "url": "https://github.com/yigityalim/percin/issues"
+  },
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "default": "./dist/index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "dist",
+    "src",
+    "LICENSE",
+    "README.md",
+    "CHANGELOG.md"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "node ../../scripts/clean.mjs dist && tsc -p tsconfig.build.json",
+    "clean": "node ../../scripts/clean.mjs dist coverage",
+    "package:check": "publint && attw --pack . --profile esm-only",
+    "test": "node --test --enable-source-maps test/*.test.mjs",
+    "test:runtime": "node --test --enable-source-maps test/*.test.mjs",
+    "test:types": "tsc -p tsconfig.type-test.json --noEmit",
+    "typecheck": "tsc -p tsconfig.json --noEmit"
+  },
+  "devDependencies": {
+    "@arethetypeswrong/cli": "catalog:",
+    "@types/node": "catalog:",
+    "publint": "catalog:",
+    "typescript": "catalog:"
+  },
+  "keywords": [
+    "cli",
+    "command-line",
+    "terminal",
+    "typescript",
+    "type-safe",
+    "fluent-api"
+  ]
+}

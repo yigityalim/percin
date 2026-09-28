@@ -1,0 +1,14 @@
+packages:
+  - apps/*
+  - packages/*
+
+catalog:
+  '@arethetypeswrong/cli': 0.18.5
+  '@types/node': 22.20.1
+  publint: 0.3.24
+  typescript: 7.0.2
+
+autoDedupe: true
+engineStrict: true
+minimumReleaseAge: 1440
+saveExact: true

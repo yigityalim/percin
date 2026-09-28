@@ -1,0 +1,37 @@
+{
+  "name": "percin-monorepo",
+  "private": true,
+  "version": "0.0.0",
+  "packageManager": "pnpm@12.6.0",
+  "engines": {
+    "node": ">=22.14.0"
+  },
+  "scripts": {
+    "build": "turbo run build",
+    "check": "pnpm check:actions && pnpm lint && turbo run typecheck test:types test package:check",
+    "clean": "turbo run clean && node scripts/clean.mjs .turbo coverage",
+    "changeset": "changeset",
+    "format": "biome format --write .",
+    "format:check": "biome format .",
+    "lint": "biome check .",
+    "test": "turbo run test",
+    "typecheck": "turbo run typecheck",
+    "knip": "knip",
+    "check:actions": "node scripts/check-actions.mjs"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "2.5.12",
+    "@changesets/cli": "3.0.3",
+    "knip": "6.38.0",
+    "turbo": "2.10.12",
+    "percin": "workspace:*"
+  },
+  "license": "MIT",
+  "devEngines": {
+    "runtime": {
+      "name": "node",
+      "version": "^24.21.0",
+      "onFail": "download"
+    }
+  }
+}
