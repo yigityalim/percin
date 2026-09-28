@@ -1,4 +1,4 @@
-import { cli, command, execute, string } from "percin"
+import { cli, command, execute, string } from "@yigityalim/percin"
 
 const whoami = command("whoami")
   .option("token", string().required())

@@ -1,11 +1,11 @@
-# percin
+# @yigityalim/percin
 
 A fluent, type-safe TypeScript framework for building command-line applications.
 
 ## Install
 
 ```sh
-pnpm add percin
+pnpm add @yigityalim/percin
 ```
 
 Requires Node.js 22 or newer.
@@ -13,7 +13,7 @@ Requires Node.js 22 or newer.
 ## Usage
 
 ```ts
-import { choice, cli, command, execute, flag, path } from "percin"
+import { choice, cli, command, execute, flag, path } from "@yigityalim/percin"
 
 const copy = command("copy")
   .description("Copy and hash a file")

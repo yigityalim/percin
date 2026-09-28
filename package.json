@@ -24,7 +24,7 @@
     "@changesets/cli": "3.0.3",
     "knip": "6.38.0",
     "turbo": "2.10.12",
-    "percin": "workspace:*"
+    "@yigityalim/percin": "workspace:*"
   },
   "license": "MIT",
   "devEngines": {

@@ -1,4 +1,4 @@
-import { choice, cli, command, execute, path } from "percin"
+import { choice, cli, command, execute, path } from "@yigityalim/percin"
 
 const hash = command("hash")
   .arg("file", path().exists())

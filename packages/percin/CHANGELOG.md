@@ -1,4 +1,4 @@
-# percin
+# @yigityalim/percin
 
 ## 0.1.0
 

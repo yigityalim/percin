@@ -74,7 +74,7 @@ jobs:
         run: pnpm install
 
       - name: Build package
-        run: pnpm --filter percin build
+        run: pnpm --filter @yigityalim/percin build
 
       - name: Run runtime tests
-        run: pnpm --filter percin test:runtime
+        run: pnpm --filter @yigityalim/percin test:runtime

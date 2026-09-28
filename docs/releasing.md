@@ -26,7 +26,7 @@ Pushes to `main` run `.github/workflows/release.yml`.
 
 Trusted publisher configuration requires the npm package to exist first. For the initial publication:
 
-1. Verify that the unscoped npm name `percin` is available; if it is not, choose the final scoped package name before publishing.
+1. Verify that the npm package name is `@yigityalim/percin` before publishing.
 2. Verify the final GitHub repository is `yigityalim/percin`, or update `packages/percin/package.json` first.
 3. Publish the first package version manually from a trusted maintainer environment.
 4. Create a GitHub environment named `npm` and configure required reviewers for publication.

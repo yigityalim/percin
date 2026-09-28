@@ -2,12 +2,12 @@
 
 Percin is a fluent, type-safe TypeScript framework for building command-line applications.
 
-It is intentionally small at runtime and strict at development time: the published `percin` package has no runtime dependencies, while the repository uses a modern monorepo toolchain for testing, packaging, release automation, and future applications.
+It is intentionally small at runtime and strict at development time: the published `@yigityalim/percin` package has no runtime dependencies, while the repository uses a modern monorepo toolchain for testing, packaging, release automation, and future applications.
 
 ## Install
 
 ```sh
-pnpm add percin
+pnpm add @yigityalim/percin
 ```
 
 Percin requires Node.js 22 or newer.
@@ -15,7 +15,7 @@ Percin requires Node.js 22 or newer.
 ## Quick start
 
 ```ts
-import { choice, cli, command, execute, path } from "percin"
+import { choice, cli, command, execute, path } from "@yigityalim/percin"
 
 const hash = command("hash")
   .description("Hash a file")

@@ -1,5 +1,5 @@
 {
-  "name": "percin",
+  "name": "@yigityalim/percin",
   "version": "0.1.0",
   "description": "A fluent, type-safe TypeScript framework for building command-line applications.",
   "type": "module",

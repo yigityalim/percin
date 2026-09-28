@@ -1,4 +1,4 @@
-import { cli, command, execute, flag, path } from "percin"
+import { cli, command, execute, flag, path } from "@yigityalim/percin"
 
 const copy = command("copy")
   .arg("source", path().exists())
